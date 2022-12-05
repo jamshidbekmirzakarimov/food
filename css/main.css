@@ -83,6 +83,8 @@
   --main-bg-color: #fff;
   --main-text-color: #fff;
   --main-subtitle-color:  #999999;
+  --main-btn-color: #7FAD39;
+  --section-bg-color:  #F5F5F5;
 }
 
 /* GENERAL */
@@ -142,9 +144,6 @@ ul,ol,li{
   margin-left: auto;
   padding-right: 20px;
   padding-left: 20px;
-}
-
-.site-header {
 }
 
 .site-header-top-top{
@@ -309,6 +308,7 @@ summary {
   display: flex;
   align-items: center;
   color: var(--main-subtitle-color);
+  margin: 0;
 }
 
 .site-header-bottom-end-title-span{
@@ -319,27 +319,310 @@ summary {
 
 /* ********** SITE MAIN START ********** */
 /* ******* HERO SECTION START ****** */
-.hero-section-sidebar-content{
-  background: #7FAD39;
+.hero-section {
+  padding-bottom: 100px;
+}
+
+.hero-section-wrapper {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  /* border: 1px solid red; */
+  margin-bottom: 20px;
+}
+
+.hero-section-sidebar {
   display: inline-block;
+  margin-right: 20px;
 }
 .hero-section-sidebar-box {
+  width: 280px;
+  background-color: var(--main-btn-color);
   display: flex;
   align-items: center;
   padding: 13px 20px;
+  margin-bottom: 20px;
 }
-.hero-section-sidebar-open-img {
+.hero-section-sidebar:hover .hero-section-sidebar-box-arrow-img{
+  transform: rotate(180deg);
+}
+.hero-section-sidebar:hover .hero-section-sidebar-box-bottom {
+  display: block;
+}
+.hero-section-sidebar-box-open-img {
   margin-right: 20px;
 }
+
+.hero-section-sidebar-box-bottom{
+  display: none;
+  height: 85%;
+  padding-left: 20px;
+  border: 1px solid rgba(42, 42, 42, 0.2);
+}
 .hero-section-sidebar-box-title {
-  margin-right: 49px;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   display: flex;
   align-items: center;
   color: var(--main-text-color);
-  }
+  margin-right: 45px;
+}
+
+.hero-section-sidebar-box-bottom-title{
+  color: var(--main-subtitle-color);
+}
+
+.hero-section-left {
+  width: 100%;
+  padding-top: 86px;
+  padding-bottom: 87px;
+  padding-left: 77px;
+  background-color: var(--section-bg-color);
+  background-image: url(../images/vegetables-organic.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 200px) center;
+}
+.hero-section-left-title {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2em;
+  color: var(--main-btn-color);
+  margin-top: 0;
+  margin-bottom: 30px;
+  
+}
+.hero-section-left-subtitle {
+  width: 304px;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--header-top-bg-color);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.hero-section-left-desc {
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: var(--main-subtitle-color);
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+.hero-section-left-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--main-bg-color);
+  background: #7FAD39;
+  display: inline-block;
+  padding: 18px 20px;
+  
+}
+
+.hero-section-list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.hero-section-item {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--section-bg-color);
+}
+
+.hero-section-item-img{
+  margin-bottom: 11px;
+}
+
+.hero-section-item-title{
+  width: 100%;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  align-items: center;
+  color: var(--header-top-bg-color);
+  background-color: var(--main-bg-color); 
+}
 /* ******* HERO SECTION END ****** */
+
+/* ****** SHOP NOW SECTION START ****** */
+.shop-now-section {
+  padding-bottom: 0px;
+}
+
+.shop-now-section-list {
+  display: flex;
+  align-items: center;
+}
+
+.shop-now-section-item {
+  width: 560px;
+  margin-right: 20px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 290px;
+  padding-right: 20px;
+  background-repeat: no-repeat;
+}
+
+.shop-now-section-item:first-child{
+  background-image: url(../images/summer-fruit.jpg);
+}
+
+.shop-now-section-item:last-child{
+  background-image: url(../images/dried-drink-fruits.jpg);
+}
+
+.shop-now-section-item-title{
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: var(--main-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.shop-now-section-item-subtitle{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: var(--main-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.shop-now-section-item-btn{
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--main-text-color);
+  background-color: var(--main-btn-color);
+  padding: 18px 20px;
+  margin-bottom: 56px;
+}
+
+/* ****** SHOP NOW SECTION END ****** */
+/* **** DIFFERIENT SECTION START **** */
+
+.differient-section{
+  padding-bottom: 40px;
+}
+
+.shop-now-section-scroll-list {
+  display: flex;
+  align-items: center;
+}
+.shop-now-section-scroll-item {
+  display: flex;
+  align-items: center;
+}
+.shop-now-section-scroll-item-title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 50px;
+  color: var(--header-top-bg-color);
+  margin-right: 34px;
+  width: 223px;
+}
+.shop-now-section-scroll-item-arro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+.shop-now-section-scroll-img {
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: var(--section-bg-color);
+}
+
+
+.differient-section-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.differient-section-item {
+}
+
+.differient-section-item-box {
+  display: flex;
+  align-items: center;
+  width: 367px;
+  margin-bottom: 20px;
+}
+
+.differient-section-item-img{
+  background-color: var(--section-bg-color);
+  margin-right: 20px;
+}
+
+.differient-section-item-text-box {
+}
+
+.differient-section-item-title {
+}
+
+.differient-section-item-subtitle {
+}
+/* **** DIFFERIENT SECTION END **** */
+
+
+
+.tab{
+  /* margin-top: 1000px; */
+  list-style: none;
+}
+
+.tab__link{
+  color: #000;
+  text-decoration: none;
+}
+
+.tabitem--active .tablink{
+  border-bottom: 2px solid #000fff;
+  background-color: #ff1493;
+}
+
+.panel{
+  list-style: none;
+}
+
+.panel__item{
+  display: none;
+}
+
+.panel__item--active{
+  display: block;
+}
 /* ********** SITE MAIN END ********** */
