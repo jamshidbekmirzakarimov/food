@@ -597,32 +597,89 @@ summary {
 }
 /* **** DIFFERIENT SECTION END **** */
 
-
-
-.tab{
-  /* margin-top: 1000px; */
-  list-style: none;
+/* ***** FEATURED-PRODUCT-SECTION START ***** */
+.featured-product-section {
+  padding-bottom: 100px;
 }
 
-.tab__link{
-  color: #000;
-  text-decoration: none;
+.featured-product-section-title {
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--header-top-bg-color);
+  margin-top: 0;
+  margin-bottom: 70px;
+  
+}
+.featured-product-section-list {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.featured-product-section-item:not(:last-child){
+  margin-right: 20px;
+}
+.featured-product-section-item-title {
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--main-subtitle-color);
+  margin-top: 0;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.featured-product-section-item-title:hover{
+  color: var(--header-top-bg-color);
+  text-decoration-line: underline;
 }
 
-.tabitem--active .tablink{
-  border-bottom: 2px solid #000fff;
-  background-color: #ff1493;
+.featured-product-section-food-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.featured-product-section-food-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  padding: 20px;
+  background-color: var(--section-bg-color);
 }
 
-.panel{
-  list-style: none;
+.featured-product-section-food-item-title-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
+.featured-product-section-food-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: var(--header-top-bg-color);
+}
+.featured-product-section-food-item-subtitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: center;
+  color: var(--header-top-bg-color);
+}
+/* ***** FEATURED-PRODUCT-SECTION START ***** */
 
-.panel__item{
-  display: none;
-}
+/* ****** FROM THE BLOG SECTION START ****** */
 
-.panel__item--active{
-  display: block;
-}
+/* ****** FROM THE BLOG SECTION END ****** */
 /* ********** SITE MAIN END ********** */
